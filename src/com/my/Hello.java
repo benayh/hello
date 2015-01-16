@@ -1,21 +1,27 @@
 package com.my;
 
+import com.my.IEcho;
+
 public class Hello {
 
 	public static void main(String[] args) {
-		
-		System.out.println("aaaaaa");
-		
+				
 		(new IEcho() {
 
 			@Override
-			public void echo() {
+			public void echo(String s) {
 				
-				System.out.println("hi");
+				System.out.println(s);
 				
 			}
 			
-		}).echo();
+		}).echo("Selam !");
+	
+		
+		
+		IEcho j8 =  (s) -> System.out.println(">> " + s );
+		
+		j8.echo("I am java8");
 		
 	}
 

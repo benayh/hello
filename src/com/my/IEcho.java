@@ -2,5 +2,5 @@ package com.my;
 
 public interface IEcho {
 
-	  void echo();
+	  void echo(String s);
 }
