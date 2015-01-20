@@ -26,11 +26,15 @@ public class JoinTest {
 	public void doWork() {
 		for (int i=0;i<100000;i++) 
 			 increment();
+				
 	}
 	
 	public synchronized void increment() {
 		sharedCounter++;
 	}
+	
+
+	
 	
 }
 
